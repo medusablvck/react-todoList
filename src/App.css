@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+}
+body{
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 0.7) 0%, rgba(148, 187, 233, 0.7) 100%);
+}
+.todo-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+h1{
+    font-size: 3rem;
+    color: rgb(73, 49, 101);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-button{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.6s ease;
+    margin-top: 2rem;
+}
+.btn:hover {
+    background-color: rgba(234, 203, 191,0.6); 
+    transform: translateY(-3px);
+    box-shadow: 7px -3px 10px 3px rgba(80, 34, 34, 0.17);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-add{
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin-top: 4rem;
+    transition: 0.6s ease;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-add:hover,
+.btn-delete:hover,
+.input__todo:hover{
+    transform: translateY(-3px);
+    box-shadow: 7px -3px 10px 3px rgba(0, 0, 0, 0.17);
 }
-
-.App-link {
-  color: #61dafb;
+.tasks{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+    font-size: 1.3rem;
+}
+.input__todo{
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.btn-delete{
+    padding: 0.3rem 0.6rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.6s ease;
 }
