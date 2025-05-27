@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/medusablvck/react-todoList.git/static/css/main.9b8d9aca.css",
+    "main.js": "/medusablvck/react-todoList.git/static/js/main.80f15e88.js",
+    "index.html": "/medusablvck/react-todoList.git/index.html",
+    "main.9b8d9aca.css.map": "/medusablvck/react-todoList.git/static/css/main.9b8d9aca.css.map",
+    "main.80f15e88.js.map": "/medusablvck/react-todoList.git/static/js/main.80f15e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b8d9aca.css",
+    "static/js/main.80f15e88.js"
+  ]
+}
